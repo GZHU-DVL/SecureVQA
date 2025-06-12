@@ -1,0 +1,60 @@
+name: SecureVQA
+batch_size: 1       # For convenience, we use dataloader to extract the inter-frame information, so the batch size can only be set to 1!
+num_workers: 2
+
+wandb:
+    project_name: SecureVQA
+
+
+data:
+    train:
+        type: FusionDataset
+        args:
+            phase: train
+            anno_file: ./examplar_data_labels/LSVQ/train_labels.txt
+            data_prefix: ./LSVQ/
+            Resize_size: 224
+            d_num: 32
+            segments_num: 16
+
+    val-livevqc:
+        type: FusionDataset
+        args:
+            phase: test
+            anno_file: ./examplar_data_labels/LIVE_VQC/labels_all.txt
+            data_prefix: ./LIVE-VQC/
+            Resize_size: 224
+            d_num: 32
+            segments_num: 16
+
+    val-kv1k:
+        type: FusionDataset
+        args:
+            phase: test
+            anno_file: ./examplar_data_labels/KoNViD/labels_all.txt
+            data_prefix: ./KoNViD-1k_video/
+            Resize_size: 224
+            d_num: 32
+            segments_num: 16
+
+    val-ltest:
+        type: FusionDataset
+        args:
+            phase: test
+            anno_file: ./examplar_data_labels/LSVQ/labels_test.txt
+            data_prefix: ./LSVQ/
+            Resize_size: 224
+            d_num: 32
+            segments_num: 16
+
+    val-l1080p:
+        type: FusionDataset
+        args:
+            phase: test
+            anno_file: ./examplar_data_labels/LSVQ/labels_1080p.txt
+            data_prefix: ./LSVQ/
+            Resize_size: 224
+            d_num: 32
+            segments_num: 16
+
+

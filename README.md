@@ -53,7 +53,7 @@ python Finetune.py
 In the experiments to verify the security of SecureVQA, the following points should be noted:
 
 * Since the attack videos need to be selected from the testing set, the attack videos in ./examplar_data_labels/ need to be adjusted for different training models.
-* Because the optimization efficiency of the attack process is too low, in the test process, we assume that the attacker knows which frames SecureVQA selects for evaluation, and only the frames selected by SecureVQA are attacked. This has no effect on the effectiveness of the attack.
+* Because the efficiency of existing attacks is too low, in the test process, we assume that the attacker knows which frames SecureVQA selects for evaluation, and only the frames selected by SecureVQA are attacked. This is advantageous to the attacker.
 *  If you want to further improve the efficiency, the FasterVQA strategy can be adopted to select only one clip to evaluate the quality. This can quickly verify the safety of the model. 
 
 The predicted scores for original videos and corresponding adversarial videos.

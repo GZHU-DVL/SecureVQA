@@ -1,5 +1,5 @@
 ## SecureVQA
-Official Repository for "Ao-Xiang Zhang, Yuan-Gen Wang, Yu Ran, Weixuan Tang, Qingxiao Guan, Chunsheng Yang, SecureVQA: Robust Video Quality Assessment Resisting Adversarial Attacks, IEEE Transactions on Broadcasting, pp. 1-12, 2025. DOI: 10.1109/TBC.2025.3575339"
+Official Repository for "Ao-Xiang Zhang, Yuan-Gen Wang, Yu Ran, Weixuan Tang, Qingxiao Guan, and Chunsheng Yang, SecureVQA: Robust Video Quality Assessment Resisting Adversarial Attacks, IEEE Transactions on Broadcasting, pp. 1-12, 2025. DOI: 10.1109/TBC.2025.3575339."
 
 # Usage
 ## Requirements
